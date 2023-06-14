@@ -10,7 +10,7 @@
 
 Projeni çalışabilmesi için Visual Studio, Cmake, Opencv ve CudaRuntime kurulu olması gerekli optimizasyonların yapılması gerekmektedir.
 
-Kurulum talimatları:
+Kurulum talimatları: (Makefile dosyası daha sonra yüklenecektir)
 
 1. Visual Studio IDE'sini, Cmake, Opencv 4.5.5 ve Cuda 11.8 yüklenip uygulama kurulumları sağlanır. 
 2. Cmake ile dosya yolu olarak opencv klasörü belirtilir, cuda çalışması için gerekli flag'ler için seçim sağlanır ve "Generate" edilir.
