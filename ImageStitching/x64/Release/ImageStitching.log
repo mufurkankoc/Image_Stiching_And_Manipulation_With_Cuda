@@ -1,0 +1,56 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\HP\source\repos\ImageStitching\ImageStitching>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64" -x cu   -IC:\opencv\build\install\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"     --keep-dir x64\Release  -maxrregcount=0  --machine 64 --compile -cudart static    -D"WIN32" -D"WIN64" -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc143.pdb /FS   /MD " -o C:\Users\HP\source\repos\ImageStitching\ImageStitching\x64\Release\kernel.cu.obj "C:\Users\HP\source\repos\ImageStitching\ImageStitching\kernel.cu" 
+C:/opencv/build/install/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+  
+C:/opencv/build/install/include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+  
+  kernel.cu
+  ImageStitching.cpp
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(21,13): error C2665: 'cv::Feature2D::detect': hiçbir aşırı yüklenmiş işlev tüm argüman türlerini dönüştüremez
+C:\opencv\build\install\include\opencv2\features2d.hpp(162,26): message : 'void cv::Feature2D::detect(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::InputArrayOfArrays)' olabilirdi
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(21,13): message : 'void cv::Feature2D::detect(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::InputArrayOfArrays)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &' değerine dönüştürülemez
+C:\opencv\build\install\include\opencv2\features2d.hpp(151,26): message : veya       'void cv::Feature2D::detect(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::InputArray)'
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(21,13): message : 'void cv::Feature2D::detect(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::InputArray)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &' değerine dönüştürülemez
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(21,13): message : '(cv::Mat, cv::KeyPoint)' bağımsız değişken listesi eşlenmeye çalışılırken
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(22,13): error C2665: 'cv::Feature2D::detect': hiçbir aşırı yüklenmiş işlev tüm argüman türlerini dönüştüremez
+C:\opencv\build\install\include\opencv2\features2d.hpp(162,26): message : 'void cv::Feature2D::detect(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::InputArrayOfArrays)' olabilirdi
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(22,13): message : 'void cv::Feature2D::detect(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::InputArrayOfArrays)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &' değerine dönüştürülemez
+C:\opencv\build\install\include\opencv2\features2d.hpp(151,26): message : veya       'void cv::Feature2D::detect(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::InputArray)'
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(22,13): message : 'void cv::Feature2D::detect(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::InputArray)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &' değerine dönüştürülemez
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(22,13): message : '(cv::Mat, cv::KeyPoint)' bağımsız değişken listesi eşlenmeye çalışılırken
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(24,14): error C2665: 'cv::Feature2D::compute': hiçbir aşırı yüklenmiş işlev tüm argüman türlerini dönüştüremez
+C:\opencv\build\install\include\opencv2\features2d.hpp(191,26): message : 'void cv::Feature2D::compute(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::OutputArrayOfArrays)' olabilirdi
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(24,14): message : 'void cv::Feature2D::compute(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::OutputArrayOfArrays)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &' değerine dönüştürülemez
+C:\opencv\build\install\include\opencv2\features2d.hpp(177,26): message : veya       'void cv::Feature2D::compute(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::OutputArray)'
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(24,14): message : 'void cv::Feature2D::compute(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::OutputArray)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &' değerine dönüştürülemez
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(24,14): message : '(cv::Mat, cv::KeyPoint, cv::Mat)' bağımsız değişken listesi eşlenmeye çalışılırken
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(25,14): error C2665: 'cv::Feature2D::compute': hiçbir aşırı yüklenmiş işlev tüm argüman türlerini dönüştüremez
+C:\opencv\build\install\include\opencv2\features2d.hpp(191,26): message : 'void cv::Feature2D::compute(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::OutputArrayOfArrays)' olabilirdi
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(25,14): message : 'void cv::Feature2D::compute(cv::InputArrayOfArrays,std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &,cv::OutputArrayOfArrays)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>,std::allocator<std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>>>> &' değerine dönüştürülemez
+C:\opencv\build\install\include\opencv2\features2d.hpp(177,26): message : veya       'void cv::Feature2D::compute(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::OutputArray)'
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(25,14): message : 'void cv::Feature2D::compute(cv::InputArray,std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &,cv::OutputArray)' : 2 bağımsız değişkeni 'cv::KeyPoint' değerinden 'std::vector<cv::KeyPoint,std::allocator<cv::KeyPoint>> &' değerine dönüştürülemez
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(25,14): message : '(cv::Mat, cv::KeyPoint, cv::Mat)' bağımsız değişken listesi eşlenmeye çalışılırken
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(44,52): error C2676: ikili '[': 'cv::KeyPoint', bu işleci veya önceden tanımlanmış işleç için kabul edilebilir bir türe dönüştürmeyi tanımlamıyor
+C:\Users\HP\source\repos\ImageStitching\ImageStitching\ImageStitching.cpp(45,52): error C2676: ikili '[': 'cv::KeyPoint', bu işleci veya önceden tanımlanmış işleç için kabul edilebilir bir türe dönüştürmeyi tanımlamıyor
+  main.cpp
