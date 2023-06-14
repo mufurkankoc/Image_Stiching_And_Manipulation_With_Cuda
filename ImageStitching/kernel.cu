@@ -20,7 +20,7 @@ void ImageStitching::BrightingWithCUDA(unsigned char* Input_Image, int Height, i
 	//Tekrar Cpu'ya kopyala
 	cudaMemcpy(Input_Image, Dev_Input_Image, Height * Width * Channels, cudaMemcpyDeviceToHost);
 
-	//free gpu mempry
+	//Gpu bellek serbest bırak
 	cudaFree(Dev_Input_Image);
 }
 
