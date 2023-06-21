@@ -28,8 +28,8 @@ private:
 
     cv::Mat* image1;
     cv::Mat* image2;
-    cv::KeyPoint keypoints1;
-    cv::KeyPoint keypoints2;
+    std::vector<cv::KeyPoint> keypoints1;
+    std::vector<cv::KeyPoint> keypoints2;
     cv::Mat descriptors1;
     cv::Mat descriptors2;
     std::vector<cv::DMatch> matches;
